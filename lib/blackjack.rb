@@ -66,7 +66,7 @@ def runner
   cur = initial_round
   while cur < 21 do
     cur = hit?(cur)
-    display_card_total
+    display_card_total(cur)
   end 
 end_game(cur)
 end
