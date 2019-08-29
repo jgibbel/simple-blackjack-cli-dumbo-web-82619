@@ -62,5 +62,11 @@ end
 
 def runner
   # code runner here
+  welcome 
+  cur = initial_round
+  while cur < 21 do
+    cur = hit?(cur)
+  end 
+end_game(cur)
 end
     
